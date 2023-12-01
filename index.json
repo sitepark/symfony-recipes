@@ -1,6 +1,9 @@
 {
     "aliases": [],
     "recipes": {
+        "overblog/graphiql-bundle": [
+            "0.1"
+        ],
         "overblog/graphql-bundle": [
             "0.12"
         ]

@@ -1,0 +1,37 @@
+{
+    "manifests": {
+        "overblog/graphiql-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": [
+                        "dev"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/dev/graphiql.yaml": {
+                    "contents": [
+                        "overblog_graphiql:",
+                        "  javascript_libraries:",
+                        "    graphiql: \"3.0.10\"",
+                        "    react: \"18.2.0\"",
+                        "    fetch: \"3.6.19\""
+                    ],
+                    "executable": false
+                },
+                "config/routes/dev/graphiql.yaml": {
+                    "contents": [
+                        "overblog_graphiql:",
+                        "    resource: \"@OverblogGraphiQLBundle/Resources/config/routing.xml\"",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "95663089fc6ca3f685d2d46eece82b8b8bac7c5b"
+        }
+    }
+}
