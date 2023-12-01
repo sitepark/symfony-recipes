@@ -1,0 +1,15 @@
+{
+    "recipes": {
+        "overblog/graphql-bundle": [
+            "0.12"
+        ]
+    },
+    "branch": "main",
+    "is_contrib": true,
+    "_links": {
+        "repository": "gitlab.com/sitepark/symfony-recipes",
+        "origin_template": "{package}:{version}@gitlab.com/sitepark/symfony-recipes:main",
+        "recipe_template": "https://gitlab.com/api/v4/projects/725985679/repository/files/{package_dotted}.{version}.json/raw?ref=main"
+    }
+}
+
