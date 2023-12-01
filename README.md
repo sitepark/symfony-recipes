@@ -11,6 +11,7 @@ Please add the following entry to your `composer.json` to use the recipes.
 ```json
 "extra": {
     "symfony": {
+	"allow-contrib": true,
         "endpoint": [
            "https://api.github.com/repos/sitepark/symfony-recipes/contents/index.json?ref=flex/main",
            "flex://defaults"
