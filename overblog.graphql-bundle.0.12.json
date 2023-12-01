@@ -1,0 +1,45 @@
+{
+    "manifests": {
+        "overblog/graphql-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/graphql.yaml": {
+                    "contents": [
+                        "overblog_graphql:",
+                        "    definitions:",
+                        "        schema:",
+                        "            query: RootQuery",
+                        "        mappings:",
+                        "            types:",
+                        "                -",
+                        "                    type: yaml",
+                        "                    dir: \"%kernel.project_dir%/config/graphql/types\"",
+                        "                    suffix: null",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/graphql.yaml": {
+                    "contents": [
+                        "overblog_graphql_endpoint:",
+                        "    resource: \"@OverblogGraphQLBundle/Resources/config/routing/graphql.yml\"",
+                        "    prefix: /graphql",
+                        "",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e93c710b50b4eb3749401be2732de4beb009520f"
+        }
+    }
+}
