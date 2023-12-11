@@ -1,8 +1,12 @@
 {
-    "aliases": [],
+    "aliases": {
+        "jwt": "lexik/jwt-authentication-bundle",
+        "jwt-auth": "lexik/jwt-authentication-bundle",
+        "jwtauth": "lexik/jwt-authentication-bundle"
+    },
     "recipes": {
-        "overblog/graphiql-bundle": [
-            "0.1"
+        "lexik/jwt-authentication-bundle": [
+            "2.5"
         ],
         "overblog/graphql-bundle": [
             "0.12"

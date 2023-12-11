@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "lexik/jwt-authentication-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "f78876b3524b6634121669c9dbed5c3f821c0c6b"
+        }
+    }
+}

@@ -2,7 +2,7 @@
 
 Additional recipes can be found on the [Main Recipes Repository](https://github.com/symfony/recipes/blob/flex/main/RECIPES.md)
 
-| Package | Latest Recipe |
-| --- | --- |
-| [overblog/graphiql-bundle](https://packagist.org/packages/overblog/graphiql-bundle) | [0.1](overblog/graphiql-bundle/0.1) |
-| [overblog/graphql-bundle](https://packagist.org/packages/overblog/graphql-bundle) | [0.12](overblog/graphql-bundle/0.12) |
+| Package | Latest Recipe | Aliases |
+| --- | --- | --- |
+| [lexik/jwt-authentication-bundle](https://packagist.org/packages/lexik/jwt-authentication-bundle) | [2.5](lexik/jwt-authentication-bundle/2.5) | `jwt`, `jwt-auth`, `jwtauth` |
+| [overblog/graphql-bundle](https://packagist.org/packages/overblog/graphql-bundle) | [0.12](overblog/graphql-bundle/0.12) |  |
