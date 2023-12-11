@@ -1,0 +1,6 @@
+{
+    "bundles": {
+        "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": ["all"]
+    },
+    "aliases": ["jwt", "jwt-auth"]
+}
