@@ -1,0 +1,10 @@
+overblog_graphql:
+  definitions:
+    schema:
+      query: RootQuery
+      mutation: RootMutation
+    mappings:
+      types:
+        - types: [yaml, graphql]
+          dir: "%kernel.project_dir%/vendor/atoolo/graphql-search-bundle/src/Resources/schema/defaults"
+          suffix: ~
