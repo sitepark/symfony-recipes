@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "atoolo/graphql-search-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Atoolo\\GraphQL\\Search\\AtooloGraphQLSearchBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/graphql.yaml": {
+                    "contents": [
+                        "overblog_graphql:",
+                        "  definitions:",
+                        "    schema:",
+                        "      query: RootQuery",
+                        "      mutation: RootMutation",
+                        "    mappings:",
+                        "      types:",
+                        "        - types: [yaml, graphql]",
+                        "          dir: \"%kernel.project_dir%/vendor/atoolo/graphql-search-bundle/src/Resources/schema/defaults\"",
+                        "          suffix: ~",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "0084bb7fc167e0c7f37e4ebeb46f841f621af290"
+        }
+    }
+}
