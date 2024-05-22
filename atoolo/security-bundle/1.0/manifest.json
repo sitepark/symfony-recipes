@@ -1,5 +1,6 @@
 {
     "bundles": {
+        "Symfony\\Bundle\\SecurityBundle\\SecurityBundle": ["all"],
         "Atoolo\\Security\\AtooloSecurityBundle": ["all"]
     },
     "copy-from-recipe": {
