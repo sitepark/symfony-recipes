@@ -1,9 +1,9 @@
 {
     "manifests": {
-        "atoolo/deployment-bundle": {
+        "atoolo/security-bundle": {
             "manifest": {
                 "bundles": {
-                    "Atoolo\\Deployment\\AtooloDeploymentBundle": [
+                    "Atoolo\\Security\\AtooloSecurityBundle": [
                         "all"
                     ]
                 },
@@ -12,17 +12,16 @@
                 }
             },
             "files": {
-                "config/routes/atoolo-deployment.yaml": {
+                "config/routes/atoolo-security.yaml": {
                     "contents": [
-                        "controller:",
-                        "  resource: \"@AtooloDeploymentBundle/Controller/\"",
-                        "  type: attribute",
+                        "api_login_check:",
+                        "  path: /api/login_check",
                         ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "739d1dc8aea80a6eb1970bfc34a199a5b1ca1abc"
+            "ref": "c8663e4a25fbf9f39b51dae0652214b5479dc7d5"
         }
     }
 }

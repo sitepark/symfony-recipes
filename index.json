@@ -11,6 +11,9 @@
         "atoolo/graphql-search-bundle": [
             "1.0"
         ],
+        "atoolo/security-bundle": [
+            "1.0"
+        ],
         "lexik/jwt-authentication-bundle": [
             "2.5"
         ],
