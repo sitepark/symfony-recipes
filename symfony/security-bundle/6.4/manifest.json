@@ -1,0 +1,9 @@
+{
+    "bundles": {
+        "Symfony\\Bundle\\SecurityBundle\\SecurityBundle": ["all"]
+    },
+    "aliases": ["security"],
+    "conflict": {
+        "symfony/framework-bundle": "<5.3"
+    }
+}
