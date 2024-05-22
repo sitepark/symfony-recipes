@@ -27,9 +27,19 @@
                         ""
                     ],
                     "executable": false
+                },
+                "config/routes/graphql.yaml": {
+                    "contents": [
+                        "overblog_graphql_endpoint:",
+                        "    resource: \"@OverblogGraphQLBundle/Resources/config/routing/graphql.yml\"",
+                        "    prefix: /api/graphql",
+                        "",
+                        ""
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "0084bb7fc167e0c7f37e4ebeb46f841f621af290"
+            "ref": "97dcf9103b718ef7adfe5b1752c7b691efdb7c88"
         }
     }
 }

@@ -2,7 +2,10 @@
     "aliases": {
         "jwt": "lexik/jwt-authentication-bundle",
         "jwt-auth": "lexik/jwt-authentication-bundle",
-        "jwtauth": "lexik/jwt-authentication-bundle"
+        "jwtauth": "lexik/jwt-authentication-bundle",
+        "security": "symfony/security-bundle",
+        "security-bundle": "symfony/security-bundle",
+        "securitybundle": "symfony/security-bundle"
     },
     "recipes": {
         "atoolo/deployment-bundle": [
@@ -19,9 +22,18 @@
         ],
         "overblog/graphql-bundle": [
             "0.12"
+        ],
+        "symfony/security-bundle": [
+            "6.4"
         ]
     },
-    "recipe-conflicts": [],
+    "recipe-conflicts": {
+        "symfony/security-bundle": {
+            "6.4": {
+                "symfony/framework-bundle": "<5.3"
+            }
+        }
+    },
     "versions": [],
     "branch": "main",
     "is_contrib": true,
