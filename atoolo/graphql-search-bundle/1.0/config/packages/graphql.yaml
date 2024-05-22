@@ -3,5 +3,8 @@ overblog_graphql:
     mappings:
       types:
         - types: [yaml, graphql]
-          dir: "%kernel.project_dir%/vendor/atoolo/graphql-search-bundle/src/Resources/schema/defaults"
+          dir: "%atoolo_graphql_search.config_dir%/graphql/defaults"
+          suffix: ~
+        - types: [yaml, graphql]
+          dir: "%kernel.project_dir%/config/graphql/types"
           suffix: ~
