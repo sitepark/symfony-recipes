@@ -1,0 +1,8 @@
+{
+    "bundles": {
+        "Atoolo\\Security\\AtooloSecurityBundle": ["all"]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    }
+}

@@ -1,2 +1,3 @@
-api_login_check:
-  path: /api/login_check
+controller:
+  resource: "@AtooloDeploymentBundle/Controller/"
+  type: attribute
