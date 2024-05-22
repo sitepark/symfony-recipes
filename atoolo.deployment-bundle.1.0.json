@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "atoolo/deployment-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Atoolo\\Deployment\\AtooloDeploymentBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/atoolo-deployment.yaml": {
+                    "contents": [
+                        "api_login_check:",
+                        "  path: /api/login_check",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "3f29a4bcd02de1daa9737009baf05193f742116b"
+        }
+    }
+}
