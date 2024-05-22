@@ -16,9 +16,6 @@
         ],
         "lexik/jwt-authentication-bundle": [
             "2.5"
-        ],
-        "overblog/graphql-bundle": [
-            "0.12"
         ]
     },
     "recipe-conflicts": [],
