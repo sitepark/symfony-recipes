@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "atoolo/runtime-check-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Atoolo\\Runtime\\Check\\AtooloRuntimeCheckBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/runtime-check.yaml": {
+                    "contents": [
+                        "controller:",
+                        "  resource: \"@AtooloRuntimeCheckBundle/Controller/\"",
+                        "  type: attribute",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "3a9b75065b9ddbcf3f14ccaafaf820c4382cceb1"
+        }
+    }
+}
