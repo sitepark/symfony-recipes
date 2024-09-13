@@ -5,6 +5,7 @@ Additional recipes can be found on the [Main Recipes Repository](https://github.
 | Package | Latest Recipe | Aliases |
 | --- | --- | --- |
 | [atoolo/deployment-bundle](https://packagist.org/packages/atoolo/deployment-bundle) | [1.0](atoolo/deployment-bundle/1.0) |  |
+| [atoolo/events-calendar-bundle](https://packagist.org/packages/atoolo/events-calendar-bundle) | [1.0](atoolo/events-calendar-bundle/1.0) |  |
 | [atoolo/graphql-search-bundle](https://packagist.org/packages/atoolo/graphql-search-bundle) | [1.0](atoolo/graphql-search-bundle/1.0) |  |
 | [atoolo/runtime-check-bundle](https://packagist.org/packages/atoolo/runtime-check-bundle) | [1.0](atoolo/runtime-check-bundle/1.0) |  |
 | [atoolo/security-bundle](https://packagist.org/packages/atoolo/security-bundle) | [1.0](atoolo/security-bundle/1.0) |  |

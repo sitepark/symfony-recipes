@@ -11,6 +11,9 @@
         "atoolo/deployment-bundle": [
             "1.0"
         ],
+        "atoolo/events-calendar-bundle": [
+            "1.0"
+        ],
         "atoolo/graphql-search-bundle": [
             "1.0"
         ],

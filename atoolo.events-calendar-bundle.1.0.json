@@ -1,0 +1,32 @@
+{
+    "manifests": {
+        "atoolo/events-calendar-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Atoolo\\EventsCalendar\\AtooloEventsCalendarBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/events-calendar.yaml": {
+                    "contents": [
+                        "overblog_graphql:",
+                        "  definitions:",
+                        "    mappings:",
+                        "      types:",
+                        "        - types: [yaml, graphql]",
+                        "          dir: \"%atoolo_events_calendar.config_dir%/graphql/defaults\"",
+                        "          suffix: ~",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "cc5047eb10314b96bace6315e703a9a7e0595e1a"
+        }
+    }
+}
