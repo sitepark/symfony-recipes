@@ -3,6 +3,8 @@
         "jwt": "lexik/jwt-authentication-bundle",
         "jwt-auth": "lexik/jwt-authentication-bundle",
         "jwtauth": "lexik/jwt-authentication-bundle",
+        "mail": "symfony/mailer",
+        "mailer": "symfony/mailer",
         "security": "symfony/security-bundle",
         "security-bundle": "symfony/security-bundle",
         "securitybundle": "symfony/security-bundle"
@@ -31,6 +33,9 @@
         ],
         "overblog/graphql-bundle": [
             "0.12"
+        ],
+        "symfony/mailer": [
+            "4.3"
         ],
         "symfony/security-bundle": [
             "6.4"

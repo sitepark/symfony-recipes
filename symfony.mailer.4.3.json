@@ -1,0 +1,43 @@
+{
+    "manifests": {
+        "symfony/mailer": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "env": {
+                    "#1": "MAILER_HOST=${MAIL_SMTP_HOST:-localhost}",
+                    "#2": "MAILER_PORT=${MAIL_SMTP_PORT:-25}",
+                    "#3": "MAILER_PARAMETERS=${MAIL_SMTP_PARAMETERS:-?verify_peer=0}",
+                    "#4": "MAILER_DSN=smtp://${MAILER_HOST}:${MAILER_PORT}${MAILER_PARAMETERS}"
+                },
+                "docker-compose": {
+                    "docker-compose.override.yml": {
+                        "services": [
+                            "mailer:",
+                            "  image: axllent/mailpit",
+                            "  ports:",
+                            "    - \"1025\"",
+                            "    - \"8025\"",
+                            "  environment:",
+                            "    MP_SMTP_AUTH_ACCEPT_ANY: 1",
+                            "    MP_SMTP_AUTH_ALLOW_INSECURE: 1"
+                        ]
+                    }
+                }
+            },
+            "files": {
+                "config/mailer.yaml": {
+                    "contents": [
+                        "framework:",
+                        "  mailer:",
+                        "    dsn: \"%env(MAILER_DSN)%\"",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "1c7f1147964422ccb170e93c19b5e56f8e9483a2"
+        }
+    }
+}
