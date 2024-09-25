@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "atoolo/form-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Atoolo\\Form\\AtooloFormBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/form.yaml": {
+                    "contents": [
+                        "controller:",
+                        "  resource: \"@AtooloFormBundle/src/Controller/\"",
+                        "  type: attribute",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e992c0010ba785348f60c12d6abd1088b08fac25"
+        }
+    }
+}

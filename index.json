@@ -14,6 +14,9 @@
         "atoolo/events-calendar-bundle": [
             "1.0"
         ],
+        "atoolo/form-bundle": [
+            "1.0"
+        ],
         "atoolo/graphql-search-bundle": [
             "1.0"
         ],
