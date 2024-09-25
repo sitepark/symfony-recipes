@@ -1,0 +1,8 @@
+{
+  "bundles": {
+    "Atoolo\\Form\\AtooloFormBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  }
+}
