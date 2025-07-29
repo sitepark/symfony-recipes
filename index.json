@@ -31,6 +31,9 @@
         "atoolo/seo-bundle": [
             "1.0"
         ],
+        "atoolo/webaccount-bundle": [
+            "1.0"
+        ],
         "lexik/jwt-authentication-bundle": [
             "2.5"
         ],
