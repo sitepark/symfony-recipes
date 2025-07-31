@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "atoolo/webaccount-bundle": {
+        "atoolo/web_account-bundle": {
             "manifest": {
                 "bundles": {
                     "Atoolo\\WebAccount\\AtooloWebAccountBundle": [
