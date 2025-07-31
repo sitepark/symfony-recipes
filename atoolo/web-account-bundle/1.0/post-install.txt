@@ -1,5 +1,3 @@
-[atoolo/webaccount-bundle]
-
 The Atoolo web account bundle provides components for the Symfony Security environment. This can be used to use web accounts with [Symfony Security](https://symfony.com/doc/current/security.html). To do this, the configuration `config/security.yaml` must be extended:
 
 config/security.yaml
@@ -7,23 +5,23 @@ config/security.yaml
 security:
 
   providers:
-    webaccount_users:
-      id: atoolo_webaccount.user_provider
+    web_account_users:
+      id: atoolo_web_account.user_provider
 
   all_users:
     chain:
-      providers: ['webnode_users', 'sitekit_users', 'webaccount_users']
+      providers: ['webnode_users', 'sitekit_users', 'web_account_users']
 
   firewalls:
 
     # last firewall !
-    webaccount:
+    web_account:
       lazy: true
-      provider: webaccount_users
+      provider: web_account_users
       custom_authenticators:
-        - atoolo_webaccount.authenticator
-      entry_point: atoolo_webaccount.unauthorized_entry_point
+        - atoolo_web_account.authenticator
+      entry_point: atoolo_web_account.unauthorized_entry_point
       stateless: false
 
 
-Further documentation can be found here: https://sitepark.github.io/atoolo-docs/develop/bundles/webaccount/
+Further documentation can be found here: https://sitepark.github.io/atoolo-docs/develop/bundles/web-account/
