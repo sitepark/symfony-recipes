@@ -1,0 +1,6 @@
+atoolo_web_account:
+  # Time in seconds for which the token is valid (default 30 days)
+  token_ttl: 2592000
+
+  # Url that is redirected to when a protected page is accessed without access rights
+  unauthorized_entry_point: /account
