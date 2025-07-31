@@ -1,5 +1,8 @@
 {
   "bundles": {
     "Atoolo\\WebAccount\\AtooloWebAccountBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
   }
 }
