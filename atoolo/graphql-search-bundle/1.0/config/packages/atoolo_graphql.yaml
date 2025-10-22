@@ -1,0 +1,3 @@
+atoolo_graphql:
+  graphql_query_dirs:
+    - '%kernel.project_dir%/src/resources/graphql/queries'
