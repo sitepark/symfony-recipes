@@ -3,6 +3,7 @@
         "Atoolo\\GraphQL\\Search\\AtooloGraphQLSearchBundle": ["all"]
     },
     "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/"
+        "config/": "%CONFIG_DIR%/",
+        "src/resources/graphql/queries/": "src/resources/graphql/queries/"
     }
 }

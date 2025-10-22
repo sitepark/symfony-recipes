@@ -1,0 +1,20 @@
+# example search query
+
+query search(
+    $input: SearchInput!
+) {
+    search(input: $input) {
+        total
+        offset
+        limit
+        queryTime
+        results {
+            ...resource
+        }
+    }
+}
+
+fragment resource on Resource {
+    id
+    name
+}
