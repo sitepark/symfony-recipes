@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "atoolo/rss-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Atoolo\\Rss\\AtooloRssBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/rss.yaml": {
+                    "contents": [
+                        "controller:",
+                        "  resource: \"@AtooloRssBundle/Controller/\"",
+                        "  type: attribute",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "11d8e24376ea463099b8b868e095de1f05ec9d69"
+        }
+    }
+}

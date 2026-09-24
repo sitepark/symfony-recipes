@@ -22,6 +22,12 @@
         "atoolo/graphql-search-bundle": [
             "1.0"
         ],
+        "atoolo/resource-bundle": [
+            "1.0"
+        ],
+        "atoolo/rss-bundle": [
+            "1.0"
+        ],
         "atoolo/runtime-check-bundle": [
             "1.0"
         ],

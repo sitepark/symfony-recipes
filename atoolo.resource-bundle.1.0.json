@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "atoolo/resource-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Atoolo\\Resource\\AtooloResourceBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/resource.yaml": {
+                    "contents": [
+                        "controller:",
+                        "  resource: \"@AtooloResourceBundle/Controller/\"",
+                        "  type: attribute",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "622ae8d4b369b2c67521bc0a25682b7fe75f3733"
+        }
+    }
+}
