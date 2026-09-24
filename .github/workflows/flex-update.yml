@@ -9,7 +9,11 @@ defaults:
 jobs:
     call-flex-update:
         concurrency: flex-update-${{ github.ref }}
+        permissions:
+            contents: write
         uses: symfony/recipes/.github/workflows/callable-flex-update.yml@main
         with:
             branch: main
             contrib: true
+        secrets:
+            token: ${{ secrets.GITHUB_TOKEN }}
